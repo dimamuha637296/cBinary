@@ -1,0 +1,1100 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    margin: 0 -20px;
+}
+
+.row>.item,
+.row>.left {
+    float: left;
+    padding: 0 20px;
+}
+
+.row>.right {
+    float: right;
+    padding: 0 20px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col12 {
+    width: 100%;
+}
+
+.table {
+    display: table;
+}
+
+.table.full {
+    width: 100%;
+    border: none;
+}
+
+.tHead,
+.tBody {
+    display: table-row-group;
+}
+
+.tRow {
+    display: table-row;
+}
+
+.tCell {
+    display: table-cell;
+}
+
+.tCell.middle {
+    vertical-align: middle;
+}
+
+.tCell.center {
+    text-align: center;
+}
+
+.tCell.right {
+    text-align: right;
+}
+
+.bodyModal {
+    overflow: hidden;
+}
+
+.modalsScroll {
+    overflow: auto;
+    position: fixed;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modalsScroll.open {
+    z-index: 55;
+    display: block;
+}
+
+.modals {
+    height: 100vh;
+    width: 100%;
+}
+
+.modals.table {
+    display: table;
+}
+
+.modals>.tCell {
+    padding: 90px 15px;
+    overflow: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overlayModal {
+    z-index: 1;
+    position: fixed;
+    background-color: #2c244a;
+    opacity: 0.87;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: none;
+}
+
+.blockMod {
+    position: relative;
+    z-index: 2;
+    display: none;
+    margin: 0px auto;
+    max-width: 100%;
+    /*! width: 852px; */
+    background-color: #4d4571;
+    box-shadow: 0px 0px 90px -18px #201b3b;
+}
+
+.windowModal {
+    padding: 50px 60px 70px;
+}
+
+.blockMod .titleBlock {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.windowInfo {
+    margin-top: 50px;
+    border: 1px solid #736c8f;
+}
+
+.windowInfo .tRow:nth-child(2n) {
+    background-color: rgba(55, 47, 91, 0.55);
+}
+
+.windowInfo .tRow+.tRow .tCell {
+    border-top: 1px solid #736c8f;
+}
+
+.windowInfo .tCell {
+    vertical-align: middle;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.windowInfo .tCell:first-child {
+    font-weight: bold;
+    padding-left: 38px;
+    padding-right: 15px;
+    width: 430px;
+}
+
+.windowInfo .tCell:last-child {
+    padding-left: 15px;
+    padding-right: 38px;
+}
+
+.windowInfo .status {
+    font-weight: bold;
+}
+
+.windowInfo .sum {
+    font-weight: bold;
+    font-size: 20px;
+    color: #00c194;
+}
+
+.windowInfo .num {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffb700;
+}
+
+.windowInfo .payIcon {
+    display: block;
+    height: 20px;
+    background-position: left center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.blockMod .in {
+    position: relative;
+    margin: 0px auto;
+}
+
+.blockMod .closeBtn {
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    right: -61px;
+    top: -55px;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 14px;
+}
+
+.blockMod .closeModal>span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    margin-left: -14px;
+    margin-right: -14px;
+}
+
+.blockMod .closeModal>span:first-child {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.blockMod .closeModal>span:last-child {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.blockMod .closeModal:hover {
+    opacity: 0.7;
+}
+
+.buyContract {
+    max-width: 735px;
+    box-shadow: 0px 0px 90px -18px #201b3b;
+}
+
+.btn {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    border: solid 2px #fff;
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    font-family: "Akrobat";
+    cursor: pointer;
+}
+
+.contractInfo {
+    text-align: center;
+    padding: 94px 0;
+    padding-bottom: 100px;
+}
+
+.btn.btnNo {
+    background-color: transparent;
+    color: #ff1f51;
+    width: 141px;
+    border-color: #ff1f51;
+}
+
+.btn.btnNo:hover {
+    background-color: #ff1f51;
+    color: #fff;
+}
+
+.btn.btnYes:hover {
+    background-color: transparent;
+}
+
+.btn.btnYes {
+    background-color: #ff1f51;
+    border-color: #ff1f51;
+    width: 141px;
+    margin-left: 20px;
+}
+
+.btnNo,
+.btnYes {
+    display: inline-block;
+}
+
+.warningCaption {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 53px;
+}
+
+.buyContractMoney {
+    background-color: #ffffff;
+    max-width: 396px;
+}
+
+.buyContractMoney .calcProfit {
+    padding: 0;
+}
+
+.differentColor {
+    border: solid 1px #e9e5f3;
+    padding: 45px;
+    padding-top: 16px;
+}
+
+.differentColor .btn {
+    width: 142px;
+    display: block;
+    margin: 0;
+    float: left;
+    margin-top: 35px;
+}
+
+.differentColor .btnYes {
+    float: right;
+}
+
+.calcProfit .differentColor .listCalc {
+    margin: 0;
+}
+
+.namePay {
+    color: #413f58;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+
+.buyContractMoney .titleBl:before {
+    display: none;
+}
+
+.buyContractMoney .titleBl {
+    background-color: #413f58;
+    border: solid 1px rgba(233, 229, 243, 0.24);
+    border-bottom: none;
+    padding: 10px;
+    padding-bottom: 107px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 61%;
+    padding-top: 7px;
+}
+
+.buyContractMoney .item span:not([class*="icon"]) {
+    color: #9896ac;
+    font-size: 15px;
+    display: block;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.buyContractMoney .item span.money {
+    display: inline;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 9px;
+}
+
+.buyContractMoney .item {
+    float: left;
+}
+
+.buyContractMoney .item+.item {
+    float: right;
+}
+
+.buyContractMoney .item [class*="icon"] {
+    color: #ffffff;
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    right: 6px;
+}
+
+@media (max-width: 1023px) {
+    .blockMod {
+        width: 100%;
+    }
+    .blockMod .closeModal {
+        right: 0;
+    }
+    .windowInfo .tCell:first-child {
+        width: 360px;
+    }
+}
+
+@media (max-width: 639px) {
+    .windowModal {
+        padding: 35px 10px;
+    }
+    .windowInfo .table .tCell {
+        display: block;
+        height: auto;
+    }
+    .windowInfo .tCell:first-child {
+        padding-left: 15px;
+        width: 100%;
+    }
+    .windowInfo .tRow+.tRow .tCell {
+        border-top: none;
+    }
+    .windowInfo {
+        margin-top: 30px;
+    }
+}
+
+.giveContractMoney {
+    max-width: 732px;
+}
+
+.giveContractMoney .calcProfit {
+    padding: 42px 0px 63px 54px;
+}
+
+.giveContractMoney .titleBl {}
+
+.giveContractMoney .titleBl span {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.giveContractMoney .in .titleBl:before {
+    bottom: 0;
+    top: auto;
+}
+
+.buyContractSuccess .text,
+.giveContractMoney .text {
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    width: 33.33%;
+    color: #abadbe;
+}
+
+.giveContractMoney .moneyText {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.giveContractMoney .moneyText.red {
+    color: #ff1f51;
+}
+
+.giveContractMoney .btn.btnYes {
+    margin: 0;
+}
+
+.giveContractMoney .howMuchPay {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.buyContractSuccess {
+    max-width: 734px;
+}
+
+.buyContractSuccess .titleBl {
+    background-color: #ffffff;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #413f57;
+    padding-bottom: 80px;
+    padding-top: 51px;
+    padding-left: 20px;
+}
+
+.buyContractSuccess .titleBl:before {
+    top: auto;
+    bottom: 50px;
+    left: 25px;
+}
+
+.buyContractSuccess .howMuchPay {border: none;}
+
+.buyContractSuccess .howMuchPay .text {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.buyContractSuccess .howMuchPay .tRow {
+    display: table-row;
+    width: 100%;
+    background-color: #56546c;
+    float: none;
+}
+
+.buyContractSuccess .howMuchPay .tRow:nth-child(2n) {
+    background-color: #403e56;
+}
+
+.buyContractSuccess .howMuchPay [class*="icon"] {
+    font-size: 30px;
+    color: #ff1f51;
+    font-weight: 300 !important;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.buyContractSuccess .howMuchPay {
+    width: 100%;
+}
+
+/* .buyContractSuccess .howMuchPay .red {
+    font-weight: 800;
+} */
+
+.red {
+    color: #ff1f51;
+}
+
+.buyContractSuccess .whiteBg {}
+
+.buyContractSuccess .tCell {
+    width: 58%;
+    line-height: 51px;
+}
+
+.buyContractSuccess .tCell:first-child {
+    padding-left: 23px;
+}
+
+.buyContractSuccess .tCell:last-child {}
+
+.buyContractSuccess .red {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.buyContractSuccess .normal {
+    font-weight: 400;
+    font-size: 20px;
+    color: #c2c5d6;
+    text-transform: none;
+}
+
+.buyContractSuccess .bold {
+    font-weight: bold;
+}
+
+.buyContractSuccess .notUppercase {
+    text-transform: none;
+}
+
+.buyContractSuccess .picture {
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.bountySuccess {
+    background-color: #413f58;
+    max-width: 980px;
+}
+
+.bountySuccessForm {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 77px;
+}
+
+.bountySuccessForm .formIn {}
+
+.bountySuccessForm .formList {}
+
+.bountySuccess .bountySuccessForm .formList .inputLine {
+    width: calc(50% - 20px);
+}
+
+.bountySuccessForm .formList .selectric {
+    border: solid 1px rgba(255, 255, 255, .33);
+    background-color: #5c5a70;
+    height: 42px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bountySuccess .bountySuccessForm .formList .inputLine:nth-child(n) {
+    width: calc(50% - 20px);
+}
+
+.bountySuccessForm .formList .inputLine label {}
+
+.bountySuccessForm .formList input {}
+
+.bountySuccess .bountySuccessForm .formList .inputLine.fullMode {
+    width: 100%;
+}
+
+.bountySuccess .bountySuccessForm .formList .inputLine textarea {
+    width: 100%;
+    height: 165px;
+}
+
+.bountySuccessForm .selectric-wrapper .label {
+    color: #ffffff;
+    opacity: 0.7;
+    padding-left: 0;
+}
+
+.bountySuccessForm .selectric-wrapper .button:after {
+    color: #ffffff;
+    background-image: url("../img/arrowselectric_white.png");
+}
+
+.bountySuccessForm .formList textarea {}
+
+.bountySuccessForm .formaQuestBl .moreBtn {
+    width: 261px;
+    height: 46px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Akrobat';
+    margin-top: 43px;
+}
+
+.bountySuccessForm .titleBl {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bountySuccessForm .titleBl:before {
+    display: none;
+}
+
+.bountySuccess .formaQuestBl {
+    position: relative;
+    top: auto;
+    width: 100%;
+    right: auto;
+    margin-top: 60px;
+}
+
+.bountySuccess .formaQuestBl .formList {
+    padding: 0;
+}
+
+.registerAndLogin {
+    max-width: 980px;
+    background-color: #413f58;
+}
+
+.registerAndLogin .ui-widget.ui-widget-content {
+    background: transparent;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.registerAndLogin .ui-widget-header {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.33);
+    padding-bottom: 19px;
+    padding-top: 49px;
+}
+
+.registerAndLogin .ui-tabs .ui-tabs-nav li {
+    width: 50%;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.registerAndLogin .ui-tabs .ui-tabs-nav li.ui-tabs-active [class*="icon"],
+.registerAndLogin .ui-tabs .ui-tabs-nav li:hover [class*="icon"],
+.registerAndLogin .ui-tabs .ui-tabs-nav li:hover .title,
+.registerAndLogin .ui-tabs .ui-tabs-nav li.ui-tabs-active .title {
+    color: #ff1f51;
+}
+
+.registerAndLogin .ui-tabs .ui-tabs-nav li:after {
+    content: '';
+    display: block;
+    width: calc(100% + 2px);
+    background-color: #ff1f51;
+    height: 4px;
+    position: absolute;
+    bottom: -20px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.registerAndLogin .ui-tabs .ui-tabs-nav li.ui-tabs-active:after,
+.registerAndLogin .ui-tabs .ui-tabs-nav li:hover:after {
+    opacity: 1;
+}
+
+.registerAndLogin .ui-widget-header [class*='icon'],
+.registerAndLogin .ui-widget-header .title {
+    transition: all 0.3s;
+}
+
+.registerAndLogin .ui-widget-header [class*='icon'] {
+    font-size: 35px;
+    padding-right: 15px;
+    color: #b2b5c5;
+}
+
+.registerAndLogin .ui-widget-header .title {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #b2b5c5;
+    text-align: center;
+    font-weight: bold;
+}
+
+.registerAndLogin .inputLine {
+    width: calc(50% - 20px);
+    /*! float: left; */
+    margin-bottom: 28px;
+}
+
+.registerAndLogin input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: solid 1px rgba(255, 255, 255, 0.33);
+    box-shadow: inset 0px 0px 8px -4px rgba(0, 0, 0, 0.7);
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: 'Akrobat';
+}
+
+.registerAndLogin .checkBlock {margin-top: 29px;}
+
+.registerAndLogin .checkBlock label {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 38px;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;  
+
+
+
+
+
+
+
+}
+
+.registerAndLogin .checkBlock label [class*='icon'] {
+    display: block;
+    position: absolute;
+    color: transparent;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+   border: solid 1px rgba(255, 255, 255, 0.33);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0px 0px 8px -4px rgba(0, 0, 0, 0.7);
+    -webkit-transition: color 0.3s;    
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+    left: 0;
+    top: -5px;
+    text-align: center;
+    
+    font-size: 14px;
+}
+
+.registerAndLogin .checkBlock input:checked~label [class*='icon'] {
+    color: #fff;
+}
+.registerAndLogin .forgotPass{text-align: right;padding-top: 18px;}
+
+.registerAndLogin .checkBlock input {
+    display: none;
+}
+
+.registerAndLogin label {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    display: block;
+}
+.registerAndLogin .formIn {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 56px;
+    padding-top: 25px;
+}
+.registerAndLogin .forgotPass a:hover{
+    color: #fff;
+}
+.registerAndLogin .forgotPass a{
+    font-family: 'Roboto';    
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ff1f51;
+    text-decoration: underline;
+}
+.registerAndLogin .captcha{
+    height: 44px;
+    width: calc(100% - 54px);
+    background-position: center;
+    background-repeat: no-repeat;
+        /*! background-color: rgba(255, 255, 255, 0.15); */
+        border: solid 1px rgba(255, 255, 255, 0.33);
+        /*! box-shadow: inset 0px 0px 8px -4px rgba(0, 0, 0, 0.7); */
+        padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.registerAndLogin .captchaBlock{
+    position: relative;
+}
+
+
+.registerAndLogin .refreshCaptcha{
+
+display: block;
+position: absolute;
+right: -28px;
+top: 2px;
+width: 64px;
+font-size: 23px;
+line-height: 43px;
+color: #ff1f51;
+text-align: center;
+cursor: pointer;
+-webkit-transition: opacity 0.3s;
+-moz-transition: opacity 0.3s;
+-o-transition: opacity 0.3s;
+transition: opacity 0.3s;
+}
+.registerAndLogin .refreshCaptcha:hover{
+    opacity: 0.7;
+}
+.registerAndLogin .moreBtn{
+    margin: 0 auto;
+    width:260px;
+    font-family: 'Akrobat';
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.registerAndLogin #loginForm,
+.registerAndLogin #regForm{
+    height: calc(802px - 125px);
+}
+.registerAndLogin #regForm:after,
+.registerAndLogin #loginForm:after{
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url('../img/registerFone1.png');
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-position-y: -45px;
+}
+.registerAndLogin .regForm .inputLine:last-child{
+    width: 100%;
+}
+.registerAndLogin .regForm .inputLine:last-child .simpleLink{
+    
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+.registerAndLogin .regForm .inputLine:last-child .simpleLink:hover{
+    color: #ff1f51;
+}
+.registerAndLogin #regForm:after{
+    background-image: url('../img/registerFone2.png');
+}
+.registerAndLogin  #regForm .inputLine{
+    
+    margin-bottom: 17px;
+}
+@media (max-width: 400px){
+    .giveContractMoney .btn.btnYes{
+        margin: 0 auto;
+    }
+    .giveContractMoney .in .titleBl::before{
+        
+    left: calc(50% - 33px);
+    }
+    .btn.btnYes,
+    .btn.btnNo{
+        display: block;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        margin-bottom: 10px;
+        float: none;
+    }
+    .differentColor .btn{
+        margin-top: 20px;
+    }
+    .differentColor{
+        
+    padding: 15px;
+    }
+}
+@media (max-width: 767px){
+    .registerAndLogin #regForm:after,
+    .registerAndLogin #loginForm:after{
+        
+    background-position: top center;
+    }
+    
+    .registerAndLogin #loginForm, .registerAndLogin #regForm{
+        
+    height: auto;
+    } 
+    .registerAndLogin .refreshCaptcha{
+        
+    right: auto;
+    left: 200px;
+    }
+    .registerAndLogin .captcha{
+        
+    width: 200px;
+    padding-left: 0;
+    margin-left: 0;
+    }
+    .registerAndLogin .inputLine{
+        
+    width: 100%;
+    margin-bottom: 10px;
+    }
+    .registerAndLogin .formIn{
+        
+    padding: 0px 0px;
+    }
+    .registerAndLogin .ui-widget-header .title{
+        display: none;
+    }
+    .registerAndLogin {
+        max-width: 500px;
+    }
+    .registerAndLogin .ui-widget-header{
+        
+    padding-top: 15px;
+    }
+    .bountySuccess .bountySuccessForm .formList .inputLine:nth-child(n){
+        width: 100%;
+    }
+    .bountySuccessForm .titleBl{
+        
+    font-size: 25px;
+    }
+    .bountySuccess .formaQuestBl{
+        
+    margin-top: 10px;
+    padding-bottom: 20px;
+    }
+    .bountySuccessForm{
+        
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    .buyContractSuccess .picture{
+        height: 40px;
+       
+        background-position: center;
+    }
+    .buyContractSuccess{
+        
+    }
+    .buyContractSuccess .howMuchPay{
+    }
+    .buyContractSuccess .titleBl::before{
+        
+    left: calc(50% - 33px);
+    bottom: 0;
+    }
+    .buyContractSuccess .titleBl{
+        padding-bottom: 15px; 
+        padding-top: 15px;
+        line-height: 30px;
+        font-size: 28px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .buyContractSuccess{
+        max-width: 400px;
+    }
+    .buyContractSuccess .tCell{
+        width: 100%;
+        display: block;
+        padding: 0 !important;
+        text-align: center;
+        line-height: 30px;
+    }
+    .buyContractSuccess .howMuchPay .tRow{
+        
+    }
+    .giveContractMoney .titleBl span{
+        
+    line-height: 30px;
+    font-size: 28px;
+    text-align: center;
+    }
+    .giveContractMoney .calcProfit{
+        
+    padding: 20px 10px 20px 10px;
+    }
+    .giveContractMoney{
+        
+    max-width: 400px;
+    }
+    .giveContractMoney .text{
+        
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+    }
+    .giveContractMoney .titleBl{
+        
+    }
+}

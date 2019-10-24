@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Bold.woff2') format('woff2'),
+        url('Intro-Bold.woff') format('woff'),
+        url('Intro-Bold.ttf') format('truetype'),
+        url('Intro-Bold.svg#Intro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Light.woff2') format('woff2'),
+        url('Intro-Light.woff') format('woff'),
+        url('Intro-Light.ttf') format('truetype'),
+        url('Intro-Light.svg#Intro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Regular.woff2') format('woff2'),
+        url('Intro-Regular.woff') format('woff'),
+        url('Intro-Regular.ttf') format('truetype'),
+        url('Intro-Regular.svg#Intro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Light_1.woff2') format('woff2'),
+        url('Intro-Light_1.woff') format('woff'),
+        url('Intro-Light_1.ttf') format('truetype'),
+        url('Intro-Light_1.svg#Intro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Regular_1.woff2') format('woff2'),
+        url('Intro-Regular_1.woff') format('woff'),
+        url('Intro-Regular_1.ttf') format('truetype'),
+        url('Intro-Regular_1.svg#Intro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Bold_1.woff2') format('woff2'),
+        url('Intro-Bold_1.woff') format('woff'),
+        url('Intro-Bold_1.ttf') format('truetype'),
+        url('Intro-Bold_1.svg#Intro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/selectric.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>history</title>
+</head>
+
+<body class='lk'>
+    <header>
+        <div class="logo">
+            <div style="background-image: url(img/headerLogo1.png)"></div>
+        </div>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="right">
+            <div class="userName">
+                <span class="icon-people-1"></span>
+                <span>Username:</span>
+                <span>Ivanovsky457</span>
+            </div>
+            <div class="lastSeen">
+                <span class="icon-calendar-42"></span>
+                <span>Last seen:</span>
+                <span>23.05.2018 14:45</span>
+            </div>
+            <div class="ip">
+                <span class="icon-server-9"></span>
+                <span>With IP adress:</span>
+                <span>192.189.112.456</span>
+            </div>
+            <div class="time">
+                <span class="icon-time-6"></span>
+                <span id="headerDate">10 JUN 2019</span>
+                <span id="headerTime">11:07:42</span>
+            </div>
+            <div class="balance">
+                <span class="icon-currency-7"></span>
+                <span>Your balance:</span>
+                <span>7032.00$</span>
+            </div>
+            <div class="tel">
+                <span class="icon-telephone-14"></span>
+                <span>phone:</span>
+                <a href="tel:+442038070498">+44 2038070498</a>
+            </div>
+            <div class="socials">
+                <div>
+                    <a href="#"></a>
+                    <span class="icon-7"></span>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <span class="icon-8"></span>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <span class="icon-9"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <ul class="mainMenu">
+            <li>
+                <span class="icon-monitor-12"></span>
+                <a href="#">MY Account</a>
+            </li>
+            <li>
+                <span class="icon-safebox-11"></span>
+                <a href="#">deposit</a>
+            </li>
+            <li>
+                <span class="icon-settings-31"></span>
+                <a href="#">settings</a>
+            </li>
+            <li>
+                <span class="icon-money-29"></span>
+                <a href="#">Make deposit</a>
+            </li>
+            <li class="active">
+                <span class="icon-appointment-1"></span>
+                <a href="#">history</a>
+            </li>
+            <li>
+                <span class="icon-wallet-24"></span>
+                <a href="#">withdrawal</a>
+            </li>
+            <li>
+                <span class="icon-workers-3"></span>
+                <a href="#">referrals</a>
+            </li>
+            <li>
+                <span class="icon-link-11"></span>
+                <a href="#">ADreting link</a>
+            </li>
+            <li>
+                <span class="icon-exit-7"></span>
+                <a href="#">LOGOUT</a>
+            </li>
+
+        </ul>
+
+        <section class="pageContent">
+            <h1 class="pageTitle">history</h1>
+            <div class="history">
+                <div class="searchBlock fullHexBlock">
+                    <div>
+                        <label for="from">from:</label>
+                        <input type="text" class="date" name="from" id="from">
+                    </div>
+                    <div>
+                        <label for="to">to:</label>
+                        <input type="text" class="date" name="to" id="to">
+                    </div>
+                    <div>
+                        <label for="payment">payment:</label>
+                        <select name="payment" id="payment">
+                            <option value="All">All</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transaction">Transaction:</label>
+                        <select name="transaction" id="transaction">
+                            <option value="All">All</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <button class="btn btnPurple">search</button>
+                </div>
+
+                <div class="historyTable table">
+                    <div class="head tRow">
+                        <div class="tCell back">
+                            <span>date</span>
+                        </div>
+                        <div class="tCell">
+                            <span>Transaction</span>
+                        </div>
+                        <div class="tCell">
+                            <span>Payment system</span>
+                        </div>
+                        <div class="tCell">
+                            <span>debit</span>
+                        </div>
+                        <div class="tCell">
+                            <span>credit</span>
+                        </div>
+                        <div class="tCell">
+                            <span>balance</span>
+                        </div>
+                        <div class="tCell">
+                            <span>comment</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell back">
+                            <span class="mobileTitleTable">date</span>
+                            <span class="date">Mar-07-2019</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Transaction</span>
+                            <span class="transaction">Withdrawal of funds</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">Payment system</span>
+                            <img class="paySys" src="img/payMeth1.png" alt="">
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">debit</span>
+                            <span class="debit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">credit</span>
+                            <span class="credit">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">balance</span>
+                            <span class="balance">$7980383.40</span>
+                        </div>
+                        <div class="tCell">
+                            <span class="mobileTitleTable">comment</span>
+                            <span class="comment">Aliquam a lacus id tortor dignissim tempor magna.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2019 GETMARGIN LTD.<br> All Rights Reserved.</p>
+        </div>
+        <div class="right">
+            <ul class="footerMenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Investment plan</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Rate Us</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="socials">
+                <div>
+                    <a href="#"></a>
+                    <span class="icon-7"></span>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <span class="icon-8"></span>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <span class="icon-9"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/jquery.knob.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
